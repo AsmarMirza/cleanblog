@@ -12,57 +12,91 @@
 }
 
 header {
-  position: absolute;
-  width: 100%;
+  max-width: 1200px;
 }
 
-.navcontainer {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 13px;
-  gap: 20px;
+  position: absolute;
+  width: 100%;
   max-width: 1200px;
-  padding: 30px 0px;
+  padding: 30px;
   color: white;
   margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-ul {
-  display: flex;
-  gap: 30px;
+h2 {
+  color: white;
+  font-size: bolder;
+  cursor: pointer;
 }
 
-h1:hover {
-  color: rgb(189, 178, 178);
-}
-
-.home__a {
-  font-family: "Times New Roman", Times, serif;
+h2:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .home__a:hover {
-  color: rgb(189, 178, 178);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (max-width: 740px) {
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  font-weight: bolder;
+}
+
+.nav_butn {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
   .navbar {
-    color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    text-transform: uppercase;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 10px;
-    max-width: 100%;
-    padding: 15px;
+    max-width: 970px;
+    padding: 30px;
+    margin: auto;
   }
 }
-@media screen and (max-width: 738px) {
-  li {
+@media only screen and (max-width: 991px) {
+  .nav_butn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(51, 50, 50, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+    gap: 3px;
+  }
+  .navbar__list {
     display: none;
+  }
+  .start__text {
+    color: black;
+  }
+  .navbar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    max-width: 540px;
   }
 }
 .hero {
@@ -71,31 +105,92 @@ h1:hover {
   align-items: center;
   background-size: cover;
   min-height: 550px;
-  background-image: linear-gradient(to bottom, rgba(77, 78, 82, 0.52), rgba(56, 52, 55, 0.73)), url("../imgs/home-bg.jpg");
+  background-image: linear-gradient(rgba(72, 75, 78, 0.52), rgba(38, 36, 37, 0.73)), url("../imgs/home-bg.jpg");
   background-position: center;
+  width: 100%;
 }
 .hero .hero_cleanblog {
   color: white;
 }
-.hero .hero_cleanblog h2 {
-  font-size: 90px;
+.hero .hero_cleanblog h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  max-width: 100%;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 .hero .hero_cleanblog .hero_subcleanblog {
-  font-size: 25px;
-  padding-left: 40px;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-.text {
+@media screen and (max-width: 991px) {
+  .hero_cleanblog h1 {
+    font-size: 60px !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 413px) {
+  .hero_subcleanblog {
+    width: 300px;
+  }
+}
+.text__inside__header {
+  color: #212529;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  line-height: 1.2;
 }
-.text .text_inside .text__inside .text__inside__header {
-  font-size: 40px;
+
+.text__inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 720px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
 }
-.text .text_inside .text__inside .text__inside__content {
-  font-size: 40px;
+
+.text__inside__contentlink {
+  font-size: 30px;
+  font-weight: 100;
+  max-width: 720px;
 }
-.text .text_inside .text__inside .text__inside__tail {
+
+.text__inside__tail {
   font-size: 20px;
+  max-width: 720px;
+  color: #6c757d;
+}
+
+.text__inside__header:hover {
+  color: #0085A1;
+}
+
+.text__inside__tail__link {
+  color: black;
+}
+
+.text__inside__tail__link:hover {
+  color: #0085A1;
+}
+
+.home__text {
+  margin-bottom: 20px;
+  margin-top: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text__inside__headerlink {
+  font-size: 44px;
+  font-weight: bolder;
 }/*# sourceMappingURL=main.css.map */
