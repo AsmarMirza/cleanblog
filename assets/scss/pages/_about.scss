@@ -1,0 +1,60 @@
+// about section
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 550px;
+    background-image: linear-gradient(rgba(72, 75, 78, 0.52),
+    rgba(38, 36, 37, 0.73)),
+      url("../imgs/about-bg.jpg");
+    background-position: center;
+    width: 100%;
+}
+.about__header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 80px;
+    font-weight: bolder;
+    max-width: 100%;
+    width: 400px;
+    padding-bottom: 20px;
+}
+.subheading{
+    font-size: 30px;
+    font-weight: 50;
+}
+
+@media screen and (max-width: 991px){
+    .heading{
+        font-size: 60px;
+        font-weight: bolder;
+        max-width: 100%;
+        width: 300px;
+        padding-bottom: 25px;
+    }   
+}
+// text section
+.lorem{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-top: 80px;
+border-bottom: 1px solid rgb(213, 207, 207);
+
+}
+.lorem__main{
+width: 600px;
+padding-bottom: 60px;
+}
+.lorem__main__text{
+padding-top: 20px;
+font-size: 23px;
+
+}

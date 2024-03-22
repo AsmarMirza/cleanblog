@@ -1,0 +1,135 @@
+// contact header
+.hero__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 550px;
+    background-image: linear-gradient(rgba(72, 75, 78, 0.52),
+    rgba(38, 36, 37, 0.73)),
+  url("../imgs/contact-bg.jpg");
+  background-position: center;
+}
+.contact__heading{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.large__heading{
+    font-size: 90px;
+    font-weight: bolder;
+    max-width: 100%;
+    width: 650px;
+    padding-bottom: 20px;
+}
+.small__heading{
+    font-size: 25px;
+    font-weight: 50;
+}
+@media screen and (max-width: 991px){
+    .large__heading{
+        font-size: 50px;
+        font-weight: bolder;
+        max-width: 100%;
+        width: 300px;
+        padding-bottom: 25px;
+    }   
+}
+// form section
+.contact__main{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border-bottom: 1px solid rgb(213, 207, 207);
+}
+.form{
+    max-width: 600px;
+    margin-bottom: 80px;
+
+}
+
+.contact__form__input{
+ height: 53px; 
+ border-style: none; 
+ border-bottom: 1px solid #ced4da;
+ font-size: 23px;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.textarea{
+    max-width: 600px;
+    border-style: none;
+    border-bottom: 1px solid #ced4da;
+    font-size: 23px;
+    min-height: 150px;
+    padding-top: 30px;
+}
+.form__text{
+    font-size: 25px;
+}
+.send__buttn{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #0085a1;
+    color: white;
+    cursor:default;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    margin-top: 30px;
+    opacity: 0.7;
+
+}
+@media screen and (max-width: 991px){
+    .textarea{
+        max-width: 500px;
+        border-style: none;
+        border-bottom: 1px solid #ced4da;
+        font-size: 23px;
+        min-height: 150px;
+        padding-top: 30px;
+    }
+    .form{
+        max-width: 500px;
+    
+    }
+} 
+@media screen and (max-width: 768px){
+    .textarea{
+    max-width: 400px;
+    border-style: none;
+    border-bottom: 1px solid #ced4da;
+    font-size: 23px;
+    min-height: 150px;
+    padding-top: 30px;
+}
+.form{
+    max-width: 400px;
+
+}
+}
+@media screen and (max-width: 405px){
+    .textarea{
+        max-width: 300px;
+        border-style: none;
+        border-bottom: 1px solid #ced4da;
+        font-size: 23px;
+        min-height: 150px;
+        padding-top: 30px;
+    }
+    .form{
+        max-width: 300px;
+    
+    }
+}

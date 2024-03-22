@@ -57,6 +57,8 @@ h2:hover{
         color: rgba(0,0,0,0.5);
         font-weight: bolder;
         gap: 3px;
+        width: 600;
+        
     }
     .navbar__list{
         display: none;
@@ -69,7 +71,9 @@ h2:hover{
         display: flex;
         align-items: center;
        justify-content: space-between;
-        max-width: 720px;
+        // max-width: 600px;
+        max-width: 100% ;
+        background-color: white;
     
     }
 }
@@ -78,6 +82,17 @@ h2:hover{
         padding: 12px;
         display: flex;
         align-items: center;
-        max-width: 540px;
+        max-width: 100%;
+        // max-width: 500px;
+        background-color: white;
+    } 
+}
+@media only screen and (max-width: 652px){
+    .navbar{
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        background-color: white;
     } 
 }
